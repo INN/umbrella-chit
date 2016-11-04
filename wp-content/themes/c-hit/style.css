@@ -1,0 +1,117 @@
+/*
+Theme Name:     Connecticut Health I-Team
+Theme URI:      http://largoproject.org
+Description:    A child theme for the Connecticut Health I-Team based on the Project Largo parent theme.
+Author:         The INN Nerds
+Author URI:     http://nerds.inn.org
+Template:       largo-dev
+Version:        0.2
+*/
+
+/**
+* Homepage Styles
+*
+* Light blue applied to left rail widget backgrounds.
+* No bullets/list margins applied to left-rail <ul>
+* Light gray applied to right rail widget backgrounds.
+*/
+
+
+.LegacyThreeColumn .top-story h2 {
+  font-size: 32px;
+  line-height: 1.2;
+}
+
+.LegacyThreeColumn .top-story img {
+  margin-bottom:0.5em;
+}
+
+/* LEFT RAIL */
+#left-rail aside.widget {
+  background:#eaeef9; // custom light blue for widget rail
+}
+
+#left-rail .widget {
+  padding-left: 24px;
+}
+#left-rail .widget .widgettitle {
+  margin-top:0.75em;
+}
+
+#left-rail .widget_text ul {
+  list-style:none;
+  margin:0;
+  font-weight:700;
+}
+
+/* RIGHT RAIL */
+#sidebar .widget {
+  background-color: #f3f3f3;
+  color: #777;
+  padding-top: 1em;
+  padding-bottom: 1em;
+  padding-right: 24px;
+}
+
+#sidebar ul {
+  list-style: none;
+  margin-left: 0;
+}
+
+#sidebar h3 {
+  background-color: #999;
+  color: #f3f3f3;
+  padding: 0.5em;
+}
+
+#sidebar a.btn.btn-primary {
+  color: #fff; // fix the donate button
+}
+
+#sidebar .rev {
+  color: #333;
+}
+
+#sidebar .rev h3 {
+  background-color: #293991;
+  color: #fff;
+  padding: 0.5em;
+}
+
+#sidebar .rev a {
+  color: #293991;
+}
+
+/**
+* Site Footer
+*
+* Make link colors white post-0.5.2 migration with dark bg.
+*/
+#site-footer a,
+.largo-footer-featured h5 a {
+  color: #edf1f4;
+}
+
+/**
+* Misc. and Media Queries
+*/
+#cxkg { display: none; }
+#caspioform { max-width: 100%; }
+#caspioform input { width: inherit; }
+.widget-logos img {
+  width: 47%;
+  margin: 1%;
+  max-width: 180px;
+}
+
+@media (max-width: 768px) {
+  .page-template-page-about-php #left-rail,
+  .page-template-page-about-php article {
+    clear: both;
+    width: 100%%;
+    margin-bottom: 18px;
+  }
+  .page-template-page-about-php #left-rail { 
+    width: 95%; 
+  }
+}
